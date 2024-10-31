@@ -65,7 +65,7 @@ function validatePostCodeLengh(firstControl: string, matcherControl: string, pos
     if (sourceValue && targetValue) {
       const matchedRecord = postalCodeLength.find(el => el.key === sourceValue);
       if (matchedRecord?.value !== targetValue.length) {
-        control.get(matcherControl)?.setErrors({ invalidLength: "Post code length must be " + matchedRecord?.value });
+        control.get(matcherControl)?.setErrors({ invalidLength: "Postal code length must be " + matchedRecord?.value });
       }
     }
     return null
